@@ -77,13 +77,8 @@ function postEventsToChannel() {
                       "inline":false
                     },
                     {
-                      "name":"Location",
-                      "value":event.location ?? NO_VALUE_FOUND,
-                      "inline":false
-                    },
-                    {
                       "name":"Description",
-                      "value":event.description ?? NO_VALUE_FOUND,
+                      "value":descript ?? NO_VALUE_FOUND,
                       "inline":false
                     }
                 ]
