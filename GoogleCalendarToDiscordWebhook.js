@@ -36,6 +36,7 @@ function postEventsToChannel() {
         continue;
       }
 
+// script customizations start here
       // find and replace HTML tags with Discord Markdown
       let descript = event.description
         descript = descript.replace(/<ul>/g, "");
