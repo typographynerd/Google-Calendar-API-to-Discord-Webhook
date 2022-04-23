@@ -66,6 +66,7 @@ function postEventsToChannel() {
                       "timestamp": DTnow.toISO(),
                       "description":`[Google Event Link](${event.htmlLink})`,
                       "color": 1425196,
+                      "footer": {"text": `Powered by OVERGRO's PoGO Calendar`},
                       "fields":[
                           {
                             "name":"Start Time",
