@@ -50,6 +50,8 @@ function postEventsToChannel() {
         descript = descript.replace(/&nbsp;/g, " ");
         descript = descript.replace(/<br>/g, "\n");
         descript = descript.replace(/<br \/>/g, "\n");
+        descript = descript.replace(/<html-blob>/g, "");
+        descript = descript.replace(/<\/html-blob>/g, "");
 
       // Build the POST request
       let options = {
