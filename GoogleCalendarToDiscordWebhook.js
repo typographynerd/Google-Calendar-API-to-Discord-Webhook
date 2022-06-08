@@ -1,10 +1,15 @@
+// Google-Calendar-API-to-Discord-Webhook
+// Minor adaptations from orginal script by DJMuffinTops
+// https://github.com/DjMuffinTops/Google-Calendar-API-to-Discord-Webhook
+
 // This Google Apps Script Will Send a POST to a Discord Webhook creating embed messages of any events starting within the next minute of execution.
 // Any events that have already started will not appear.
 // This script should be triggered every minute using Google Triggers.
+
 const CHANNEL_POST_URL = "DISCORD_WEBHOOK_LINK_GOES_HERE";
 const CALENDAR_ID = "GOOGLE_CALENDAR_ID_GOES_HERE";
 const NO_VALUE_FOUND = "N/A";
-const minsInAdvance = 1; // Set the number of minutes in advance you'd like events to be posted to discord. Must be 1 or greater
+const minsInAdvance = 60; // Set the number of minutes in advance you'd like events to be posted to discord. Must be 1 or greater
 
 
 // Import Luxon
